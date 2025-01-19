@@ -1,79 +1,44 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 이벤트 생성기
 
-# Getting Started
+## 관련 프로젝트
+[클라이언트 프로젝트](https://github.com/SseongWoo/SedolStock)
+[서버 프로젝트](https://github.com/SseongWoo/SedolStock_Server)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 프로젝트 소개
+- 관련 프로젝트 "세돌스탁"의 간단한 이벤트 생성기 어플입니다.
+- 이벤트를 쉽게 생성하기 위해 제작.
 
-## Step 1: Start the Metro Server
+## 개요
+- 프로젝트 : 이벤트 생성기
+- 분류 : 개인 프로젝트
+- 제작기간 : 25.01.18.~ 25.01.19
+- 사용기술 : React Native, TypeScript, JavaScript
+- 사용 IDE : Visual Studio Code
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## 주요 기능
+- RESTful API를 사용해 사용자가 입력한 데이터를 기반으로 이벤트를 생성하고 서버로 전송합니다.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 프로젝트 구성
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+### 디렉토리 구조
+```sh
+├── App.tsx
+├── assets
+│   ├── fonts
+│   └── images
+│       └── title.png
+├── screens                     // 앱 화면
+│   ├── ChoiceScreen.tsx        // 메인 화면
+│   └── CreateEventScreen.tsx   // 이벤트 생성 화면
+├── services
+│   └── HttpRequest.tsx         // 서버 통신 서비스
+├── styles
+│   ├── colors.ts               // 색상 설정
+│   └── globalStyles.ts         // 공용 스타일 설정
+└── types.ts
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### 화면 구성
+|메인|이벤트 생성|
+|:---:|:---:|
+|<img src = "https://github.com/user-attachments/assets/bfebbb9c-4bb2-4b8b-a065-1dd1368f1953" width="350" height="750">|<img src = "https://github.com/user-attachments/assets/3e7fb196-98c0-4016-87ab-28176eed72a3" width="350" height="750">|
