@@ -2,6 +2,7 @@
 
 ## 관련 프로젝트
 [클라이언트 프로젝트](https://github.com/SseongWoo/SedolStock)
+
 [서버 프로젝트](https://github.com/SseongWoo/SedolStock_Server)
 
 ## 프로젝트 소개
